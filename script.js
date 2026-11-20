@@ -1,9 +1,3 @@
-// =====================================================
-// script.js - Portfólio Maria Eduarda
-// =====================================================
-
-
-// ===== ROLAGEM SUAVE =====
 function ativarRolagemSuave() {
     const links = document.querySelectorAll('a[href^="#"]');
 
@@ -18,8 +12,6 @@ function ativarRolagemSuave() {
     });
 }
 
-
-// ===== DESTACAR A SEÇÃO ATIVA NO MENU =====
 function destacarSecaoAtiva() {
     const secoes = document.querySelectorAll("section");
     const links = document.querySelectorAll(".main-navigation a");
@@ -27,7 +19,6 @@ function destacarSecaoAtiva() {
     function atualizar() {
         let secaoAtual = "";
 
-        // A seção atual é a última cujo topo já passou da metade da tela
         secoes.forEach(function (secao) {
             if (secao.getBoundingClientRect().top <= window.innerHeight / 2) {
                 secaoAtual = secao.id;
@@ -47,8 +38,6 @@ function destacarSecaoAtiva() {
     atualizar();
 }
 
-
-// ===== TEMA CLARO / ESCURO (salvo no localStorage) =====
 function ativarTema() {
     const botao = document.querySelector(".theme-toggle");
 
@@ -66,7 +55,6 @@ function ativarTema() {
         lucide.createIcons();
     }
 
-    // Lê o tema salvo (se não houver, usa o escuro)
     aplicarTema(localStorage.getItem("tema") || "escuro");
 
     botao.addEventListener("click", function () {
@@ -80,8 +68,6 @@ function ativarTema() {
     });
 }
 
-
-// ===== BOTÃO DE VOLTAR AO TOPO =====
 function ativarBotaoTopo() {
     const botao = document.createElement("button");
     botao.type = "button";
@@ -90,7 +76,6 @@ function ativarBotaoTopo() {
     botao.textContent = "↑";
     document.body.appendChild(botao);
 
-    // Aparece depois de rolar 500px
     window.addEventListener("scroll", function () {
         if (window.scrollY > 500) {
             botao.classList.add("mostrar");
@@ -104,11 +89,8 @@ function ativarBotaoTopo() {
     });
 }
 
-
-// ===== CERTIFICADOS AMPLIADOS =====
-// Fecha pelo ×, clicando fora ou com a tecla Esc
 function ativarModalCertificados() {
-    // Cria a janela (dialog) e coloca no fim da página
+    
     const janela = document.createElement("dialog");
     janela.className = "modal-certificado";
     janela.setAttribute("aria-label", "Certificado ampliado");
@@ -123,16 +105,14 @@ function ativarModalCertificados() {
         const previa = card.querySelector(".certificate-preview");
         const nome = card.querySelector(".certificate-name").textContent.trim();
 
-        // Deixa a prévia utilizável pelo teclado
         previa.setAttribute("tabindex", "0");
         previa.setAttribute("role", "button");
         previa.setAttribute("aria-label", "Ampliar certificado: " + nome);
 
         function abrir() {
-            // Copia o conteúdo do card para dentro da janela
+        
             conteudo.innerHTML = card.innerHTML;
 
-            // Na cópia, a prévia não é um botão
             const copia = conteudo.querySelector(".certificate-preview");
             copia.removeAttribute("tabindex");
             copia.removeAttribute("role");
@@ -151,12 +131,10 @@ function ativarModalCertificados() {
         });
     });
 
-    // Fechar pelo botão ×
     janela.querySelector(".modal-fechar").addEventListener("click", function () {
         janela.close();
     });
 
-    // Fechar clicando fora (o clique caiu na própria janela, não no conteúdo)
     janela.addEventListener("click", function (evento) {
         if (evento.target === janela) {
             janela.close();
@@ -164,18 +142,16 @@ function ativarModalCertificados() {
     });
 }
 
-// ===== ANIMAÇÃO DE ENTRADA DAS SEÇÕES =====
 function animarSecoes() {
     const secoes = document.querySelectorAll("#sobre, #certificados, #projetos, #contato");
 
-    // Deixa as seções escondidas no começo
     secoes.forEach(function (secao) {
         secao.classList.add("animar");
     });
 
     function mostrarSecoes() {
         secoes.forEach(function (secao) {
-            // Se o topo da seção já entrou na tela, mostra
+            
             if (secao.getBoundingClientRect().top < window.innerHeight - 100) {
                 secao.classList.add("visivel");
             }
@@ -187,7 +163,7 @@ function animarSecoes() {
 }
 
 
-// ===== CHAMA TUDO =====
+//chama tudo//
 ativarRolagemSuave();
 destacarSecaoAtiva();
 ativarTema();

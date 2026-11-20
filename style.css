@@ -1824,12 +1824,8 @@ body {
 
 }
 
-/* =====================================================
-   ESTILOS USADOS PELO script.js
-   (colar DEPOIS do último } do @media)
-   ===================================================== */
+/*script.js*/
 
-/* ----- Cabeçalho fixo e menu ----- */
 .site-header {
     position: sticky;
     top: 0;
@@ -1841,19 +1837,19 @@ body {
     color: #3b82f6;
 }
 
-/* Com 5 links, o menu no celular precisa de um espaço menor entre eles */
+/*Com 5 links, o menu no celular precisa de um espaço menor entre eles*/
 @media screen and (max-width: 600px) {
     .main-navigation {
         gap: 12px;
     }
 }
 
-/* Evita que o cabeçalho fixo cubra o título da seção */
+/*Evita que o cabeçalho fixo cubra o título da seção*/
 section {
     scroll-margin-top: 110px;
 }
 
-/* ----- Animação de entrada das seções ----- */
+/* Animação de entrada*/
 .animar {
     opacity: 0;
     transform: translateY(30px);
@@ -1865,7 +1861,6 @@ section {
     transform: translateY(0);
 }
 
-/* ----- Botão de voltar ao topo ----- */
 .botao-topo {
     position: fixed;
     right: 20px;
@@ -1893,7 +1888,6 @@ section {
     background-color: #1d4ed8;
 }
 
-/* ----- Certificado ampliado (janela) ----- */
 .certificate-card .certificate-preview {
     cursor: zoom-in;
 }
@@ -1950,7 +1944,6 @@ section {
     color: #3b82f6;
 }
 
-/* ----- Foco visível ao navegar com o teclado (Tab) ----- */
 a:focus-visible,
 button:focus-visible,
 summary:focus-visible,
@@ -1960,11 +1953,8 @@ summary:focus-visible,
 }
 
 
-/* =====================================================
-   TEMA CLARO (agrupado por cor)
-   ===================================================== */
+/*TEMA CLARO*/
 
-/* Fundo da página */
 body.tema-claro,
 body.tema-claro .site-header {
     background-color: #f4f7fc;
@@ -1978,7 +1968,6 @@ body.tema-claro .profile-circle {
     box-shadow: 0 0 0 8px #f4f7fc, 0 0 0 11px #2563eb;
 }
 
-/* Texto escuro */
 body.tema-claro,
 body.tema-claro .main-navigation a,
 body.tema-claro .header-actions a,
@@ -1998,7 +1987,6 @@ body.tema-claro .modal-fechar {
     color: #0f172a;
 }
 
-/* Texto cinza */
 body.tema-claro .home-content .home-description,
 body.tema-claro .about-experience li,
 body.tema-claro .certificate-issuer,
@@ -2016,7 +2004,6 @@ body.tema-claro .certificates-subtitle {
     color: #334155;
 }
 
-/* Texto azul */
 body.tema-claro .main-navigation a:hover,
 body.tema-claro .main-navigation a.ativo,
 body.tema-claro .header-actions a:hover,
@@ -2031,7 +2018,6 @@ body.tema-claro .btn-secondary:hover {
     color: #ffffff;
 }
 
-/* Cartões brancos */
 body.tema-claro .certificate-card,
 body.tema-claro .project-card,
 body.tema-claro .contact-card,
@@ -2051,7 +2037,6 @@ body.tema-claro .contact-card:hover {
     background-color: #eef3fb;
 }
 
-/* Linhas e bordas */
 body.tema-claro .about-divider {
     background-color: #cbd5e1;
 }
@@ -2074,7 +2059,6 @@ body.tema-claro .contact-icon {
     border-color: #93b4ea;
 }
 
-/* Prévia dos certificados e etiquetas em azul claro */
 body.tema-claro .certificate-preview {
     background-color: #dbe7fb;
     border-color: #bfd0ee;
@@ -2085,7 +2069,6 @@ body.tema-claro .project-tags li {
     color: #1d4ed8;
 }
 
-/* Selos de status */
 body.tema-claro .certificate-status,
 body.tema-claro .project-status {
     background-color: #d1fae5;
