@@ -110,13 +110,6 @@ body {
     align-items: flex-start;
 }
 
-.home-subtitle {
-    color: #3b82f6;
-    font-size: 12px;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
 .home-content p {
     color: #ffffff;
     font-size: 16px;
@@ -533,11 +526,6 @@ body {
     flex-direction: column;
 }
 
-.certificate-card-soon {
-    border: 1px dashed #2a4a85;
-    background-color: transparent;
-}
-
 /* Prévia visual dos certificados */
 
 .certificate-preview {
@@ -937,13 +925,6 @@ body {
     font-weight: 600;
 }
 
-/*troca o verde pelo azul, só nos selos que têm essa segunda classe*/
-
-.project-status-wip {
-    background-color: #12203a;
-    color: #4d8dff;
-}
-
 .project-tags {
     display: flex;
     flex-wrap: wrap;
@@ -1293,12 +1274,6 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        text-align: center;
-    }
-
-    .home-subtitle {
-        font-size: 11px;
-        letter-spacing: 1px;
         text-align: center;
     }
 
@@ -2073,9 +2048,4 @@ body.tema-claro .certificate-status,
 body.tema-claro .project-status {
     background-color: #d1fae5;
     color: #047857;
-}
-
-body.tema-claro .project-status-wip {
-    background-color: #dbe7fb;
-    color: #1d4ed8;
 }
