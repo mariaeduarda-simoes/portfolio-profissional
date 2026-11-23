@@ -1,41 +1,33 @@
-# Portfólio | Maria Eduarda
+# Portfólio | Maria Eduarda Simões
 
-Portfólio pessoal desenvolvido para apresentar minha trajetória na área de tecnologia, projetos, conhecimentos técnicos e experiências acadêmicas.
+Site pessoal onde reúno meus projetos, certificados e informações sobre minha formação em Engenharia de Software. Foi o meu primeiro projeto de front-end e eu o construí do zero, sem frameworks ou templates, para praticar HTML, CSS e JavaScript.
 
-O projeto foi desenvolvido com foco em organização, navegação intuitiva e adaptação a diferentes dispositivos.
+**Acesse:** [mariaeduarda-simoes.github.io/portfolio-profissional](https://mariaeduarda-simoes.github.io/portfolio-profissional/)
 
-## Acesse o portfólio
+## Sobre o projeto
 
-**[Visualizar portfólio](https://mariaeduarda-simoes.github.io/portfolio-profissional/)**
+O site tem uma página única com quatro seções: Home, Sobre, Certificados e Projetos, além do contato. Escrevi o HTML e o CSS por conta própria e usei JavaScript puro para as interações:
 
-## Tecnologias utilizadas
+- rolagem suave entre as seções e destaque do item ativo no menu;
+- tema claro e escuro, com a escolha salva no navegador (`localStorage`);
+- botão para voltar ao topo;
+- visualização ampliada dos certificados;
+- cartões de projetos com seção "O que aprendi" expansível;
+- layout adaptado para celular.
 
-- HTML5
-- CSS3
-- JavaScript
-
-## Funcionalidades
-
-- Apresentação pessoal e profissional.
-- Seção de projetos com descrições e tecnologias utilizadas.
-- Exibição de certificados.
-- Navegação entre as seções da página.
-- Alternância entre temas.
-- Animações e efeitos visuais.
-- Layout responsivo.
-- Seção de contato.
-
-## Projetos em destaque
+## Projetos apresentados
 
 ### WhatsApp Analyzer
 
-Ferramenta desenvolvida em Python para analisar conversas do WhatsApp e gerar estatísticas e visualizações.
+API em Python que lê conversas exportadas do WhatsApp e gera estatísticas sobre elas. Usa FastAPI, Pandas e Pytest.
 
-**Tecnologias:** Python, FastAPI, Pandas e Pytest.
+[Ver repositório](https://github.com/mariaeduarda-simoes/whatsapp-analyzer)
 
-**Repositório:** [WhatsApp Analyzer](https://github.com/mariaeduarda-simoes/whatsapp-analyzer)
+## Tecnologias
 
-## Estrutura do projeto
+HTML5, CSS3 e JavaScript, hospedado no GitHub Pages.
+
+## Estrutura
 
 ```text
 portfolio-profissional/
@@ -43,20 +35,11 @@ portfolio-profissional/
 ├── style.css
 ├── script.js
 └── assets/
-    └── images/
 ```
 
-*Observação: a estrutura acima representa a organização prevista. Ajuste os nomes das pastas caso sejam diferentes no projeto.*
+## Contato
 
-## Desenvolvimento
-
-Este portfólio faz parte da minha trajetória de aprendizado em Engenharia de Software e tem como objetivo reunir projetos, demonstrar conhecimentos técnicos e acompanhar minha evolução na área de desenvolvimento.
-
-## Autora
-
-**Maria Eduarda**
-
-Estudante de Engenharia de Software.
+Maria Eduarda Simões, estudante de Engenharia de Software na UDF (Brasília-DF), em busca de estágio na área.
 
 - GitHub: [@mariaeduarda-simoes](https://github.com/mariaeduarda-simoes)
-- Portfólio: [Acessar site](https://mariaeduarda-simoes.github.io/portfolio-profissional/)
+- LinkedIn: [Maria Eduarda Simões Silva](https://www.linkedin.com/in/maria-eduarda-sim%C3%B5es-silva-4b2117323/)
